@@ -1,6 +1,16 @@
 {
+    "authors" : [{
+        "name" : "Sandip Ghadge",
+        "email" : "ghadagesandip@gmail.com"
+    }],
     "require": {
         "silex/silex": "~1.2",
-        "twig/twig": ">=1.8,<2.0-dev"
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/twig-bridge": "^2.6"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Sandip\\Website\\" : "src/Sandip/Website"
+        }
     }
 }

@@ -1,0 +1,171 @@
+{
+    "debug": "%APP_DEBUG%",
+    "timezone": "%APP_TIMEZONE%",
+    "project.name": "%APP_PROJECT_NAME%",
+    "TwigAutoReload": "%APP_TWIG_AUTO_RELOAD%",
+    "RunningBehindTrustedProxy": "%APP_RUNNING_BEHIND_TRUSTED_PROXY%",
+    "EnforcedDomainAccessPoint": "%APP_ENFORCED_DOMAIN_ACCESS_POINT%",
+    "TranslationsEnabled": "%APP_TRANSLATIONS_ENABLED%",
+    "LocalizationBundle": {
+        "locales": "%locales%",
+        "default_locale": "%default_locale%",
+        "fallback_locale": "en"
+    },
+    "FrameworkBundle": {
+        "token.secret": "%APP_SECRET%"
+    },
+    "AWS": {
+        "key": "%AWS_ACCESS_KEY_ID%",
+        "secret": "%AWS_SECRET_KEY%",
+        "region": "%AWS_REGION%"
+    },
+    "SwiftMailerOptions": {
+        "host": "%SWIFTMAILER_SMTP_HOST%",
+        "port": "%SWIFTMAILER_SMTP_PORT%",
+        "auth_mode": "%SWIFTMAILER_SMTP_AUTH_MODE%",
+        "encryption": "%SWIFTMAILER_SMTP_ENCRYPTION%",
+        "username": "%SWIFTMAILER_SMTP_USERNAME%",
+        "password": "%SWIFTMAILER_SMTP_PASSWORD%"
+    },
+    "AwsS3BucketPrivate": "%AWS_S3_BUCKET_PRIVATE%",
+    "AwsS3BucketPublic": "%AWS_S3_BUCKET_PUBLIC%",
+    "DatabaseUri": "%DATABASE_URI%",
+    "AppBundle": {
+        "reference_timezone": "%AppBundle_reference_timezone%",
+        "mailer_catch_all_email_address": "%APP_MAILER_CATCH_ALL_EMAIL_ADDRESS%",
+        "project_domain_name": "%APP_PROJECT_DOMAIN_NAME%"
+    },
+    "ErrorHandlingBundle": {
+        "project_name": "%APP_PROJECT_NAME%",
+        "email_notifications": {
+            "sender": "%ERROR_HANDLING_MAIL_SENDER_ADDRESS%",
+            "receivers": "%ERROR_HANDLING_MAIL_RECEIVERS_MAP%",
+            "mailer_service_id": "mailer"
+        }
+    },
+    "TranslationBundle": {
+        "source_language_locale_key": "en",
+        "base_path": "%app_base_path%",
+        "locales": "%locales%"
+    },
+    "PropertyFeatureBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/property-feature/",
+        "locales": "%locales_content%"
+    },
+    "DistrictBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/district/",
+        "locales": "%locales_content%"
+    },
+    "MetroBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/metro/",
+        "locales": "%locales_content%"
+    },
+    "BuildingBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/building/",
+        "locales": "%locales_content%",
+        "email_sender_name": "%EMAIL_SENDER_NAME%",
+        "email_sender_address": "%EMAIL_SENDER_ADDRESS%"
+    },
+    "PropertyBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/property/",
+        "locales": "%locales_content%",
+        "resources_storage_gaufrette_adapter_service_id": "property_gaufrette_aws_s3_resources_adapter",
+        "image_cache_gaufrette_adapter_service_id": "property_gaufrette_aws_s3_images_cache_adapter",
+        "maximum_images_count": 30,
+        "maximum_metro_stations_count": 3,
+        "email_sender_name": "%EMAIL_SENDER_NAME%",
+        "email_sender_address": "%EMAIL_SENDER_ADDRESS%"
+    },
+    "UserBundle": {
+        "database_service_id": "db_main",
+        "aws_s3_service_id": "amazon_aws_s3",
+        "aws_s3_bucket_public": "%AWS_S3_BUCKET_PUBLIC%",
+        "image_cache_gaufrette_adapter_service_id": "user_gaufrette_aws_s3_images_cache_adapter",
+        "blowfish_cost": 13,
+        "password_token_salt": "%APP_SECRET%",
+        "cookie_signing_secret": "%APP_SECRET%",
+        "cookie_path": "/admin/",
+        "locales": "%locales%",
+        "email_sender_name": "%EMAIL_SENDER_NAME%",
+        "email_sender_address": "%EMAIL_SENDER_ADDRESS%"
+    },
+    "EmailTemplateBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/email-template/",
+        "wrapping_template_path": "layout_email_from_template.html.twig",
+        "locales": "%locales_content%"
+    },
+    "PropertyAdBundle": {
+        "database_service_id": "db_main"
+    },
+    "CustomerBundle": {
+        "database_service_id": "db_main",
+        "webpay_service_id": "webpay",
+        "blowfish_cost": 13,
+        "password_token_salt": "%APP_SECRET%",
+        "cookie_signing_secret": "%APP_SECRET%",
+        "cookie_path": "/",
+        "locales": "%locales%"
+    },
+    "Customer": {
+        "email_sender_name": "%EMAIL_SENDER_NAME%",
+        "email_sender_address": "%EMAIL_SENDER_ADDRESS%"
+    },
+    "Property": {
+        "allowed_resolutions": ["160x120", "720x500"]
+    },
+    "Agency": {
+        "allowed_resolutions": ["160x120", "300x200", "720x500"]
+    },
+    "User": {
+        "allowed_resolutions": ["160x120", "300x200", "720x500"]
+    },
+    "MonitoringStatus": {
+
+    },
+    "JobQueueBundle": {
+        "database_service_id": "db_main"
+    },
+    "SystemConfigBundle": {
+        "database_service_id": "db_main"
+    },
+    "NoticeBundle": {
+        "database_service_id": "db_main",
+        "cache_path": "%NoticeBundle.cache_path%",
+        "image_storage_path": "%NoticeBundle.image_storage_path%",
+        "locales": "%locales%",
+        "database_type": "relational"
+    },
+    "BackendBundle": {},
+    "FaqBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "locales": "%locales%",
+        "email_sender_name": "%EMAIL_SENDER_NAME%",
+        "email_sender_address": "%EMAIL_SENDER_ADDRESS%"
+    },
+    "StaticPageBundle": {
+        "database_type": "relational",
+        "database_service_id": "db_main",
+        "cache_path": "../cache/static-page/",
+        "locales": "%locales%"
+    },
+    "AgencyBundle": {
+        "database_service_id": "db_main",
+        "aws_s3_service_id": "amazon_aws_s3",
+        "aws_s3_bucket_public": "%AWS_S3_BUCKET_PUBLIC%",
+        "image_cache_gaufrette_adapter_service_id": "agency_gaufrette_aws_s3_images_cache_adapter",
+        "locales": "%locales%"
+    }
+}

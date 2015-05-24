@@ -1,2 +1,4 @@
 <?php
-require_once __DIR__.'/../vendor/autoload.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
+$app = new Devture\Website\Application(dirname(__DIR__));
+return $app;
